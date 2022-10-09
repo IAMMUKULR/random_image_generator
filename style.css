@@ -1,0 +1,77 @@
+* {
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #eef5ff;
+  }
+  h1{
+      text-align: center;
+  }
+  .wrapper {
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: grid;
+    place-items: center;
+    gap: 15px;
+  }
+  .container {
+    height: 200px;
+    width: 200px;
+    background-color: #ffffff;
+    box-shadow: 0 0 25px rgba(17, 1, 68, 0.08);
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+  }
+  input[type="checkbox"] {
+   
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    width: 30px; 
+    height: 30px; 
+  }
+  
+  .container img {
+    width: 70%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+  }
+  @media screen and (min-width: 950px) {
+    .wrapper {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    .container {
+      height: 250px;
+      width: 300px;
+    }
+   
+  }
+
+  .checkbox-round {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox-round:checked {
+    background-color: gray;
+}
